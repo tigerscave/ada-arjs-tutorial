@@ -14,11 +14,17 @@
       embedded
       arjs="sourceType: webcam; debugUIEnabled: false;"
     >
-      <a-box
+      <!-- <a-box
         material="color: red"
         gps-entity-place="latitude: 35.7057678; longitude: 139.7801474;"
         scale="30 30 30"
-      ></a-box>
+      ></a-box> -->
+      <a-text
+        value="Tantsubo test"
+        look-at="[gps-camera]"
+        scale="20 20 20"
+        gps-entity-place="latitude: 35.7057678; longitude: 139.7801474;"
+      ></a-text>
       <a-camera gps-camera="minDistance:30; maxDistance:100" rotation-reader> </a-camera>
     </a-scene>
   </body>
